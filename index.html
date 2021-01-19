@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        
+        <title>Croissant Pizza Form</title>
+    </head>
+
+    <body>
+        <section id="overlay">
+            <img src="pizzalogo.png" alt="Croissant Pizza Logo" id="logo">
+            <hr>
+            <form action="submission.html" method="POST">
+                <h1> Make Your Own Pizza!</h1>
+                
+                <section class="type">
+                    <label for=size> What size pizza would you like?</label>
+                    <br>
+                    <input type=radio name=size id=small value=small>
+                    <label for=small> Small Pizza 10" </label>
+                    <input type=radio name=size id=medium value=medium>
+                    <label for=medium> Medium Pizza 12" </label>
+                    <input type=radio name=size id=large value=large>
+                    <label for=large> Large Pizza 14" </label>
+                    <input type=radio name=size id=xL value=xL>
+                    <label for=xL> X-Large Pizza 16" </label>
+                    <hr>
+
+                    <label for=quantity> How many pizzas would you like? </label>
+                    <br>
+                    <input type=number name=quantity id=quantity> 
+                    <hr>
+                </section>
+
+                <section class="crusts">
+                    <label for=crust> What tye of crust would you like?</label>
+                    <br>
+                    <input type=radio name=crust id=pan value=pan>
+                    <label for=pan> Handmade Pan Pizza</label>
+                    <input type=radio name=crust id=thin value=thin>
+                    <label for=thin> Thin Crust </label>
+                    <input type=radio name=crust id=reg value=reg>
+                    <label for="reg"> Regular Buttered Crust </label>
+                    <input type=radio name=crust id=stuffedc value=stuffedc>
+                    <label for=stuffedc> Cheesy Stuffed Crust </label>
+                    <input type=radio name=crust id=stuffedm value=stuffedm>
+                    <label for=stuffedm> Marinara Stuffed Crust </label>
+                    <input type=radio name=crust id=croissant value=croissant>
+                    <label for=croissant> Specialty Croissant Crust </label>
+                    <hr>
+                    
+                </section>
+
+                <section class="sauces">
+                    <label for=sauce> Which sauce would you like to try today? </label>                    
+                    <br>
+                    <select name=sauce id=sauce>
+                        <option value=marinara> Marinara </option>
+                        <option value=alfredo> Alfredo </option>
+                        <option value=buffalo> Buffalo </option>
+                        <option value=bbq> Barbecue </option>
+                        <option value=none> None </option>
+                    </select>
+                    <hr>
+                </section>
+
+                <section class="cheeses">
+                    <label for=cheese> How cheesy do you want your pizza?</label>
+                    <br>
+                    <span>No Cheese</span>
+                    <input type=range name=cheese id=cheese value=3 min=1 max=5>
+                    <span>Extra-Extra Cheese</span>
+                    <hr>
+                </section>
+
+                <section class="toppings">
+                    <label for=topping> Please Choose Your Toppings:</label>
+                    <br>
+                    <input type="checkbox" name=topping id=pepperoni value=pepperoni>
+                    <label for=pepperoni>Pepperoni</label>
+                    <input type="checkbox" name=topping id=sausage value=sausage>
+                    <label for=suasage>Sausage</label>
+                    <input type="checkbox" name=topping id=pineapple value=pineapple>
+                    <label for=pineapple>Pineapple</label>            
+                    <input type="checkbox" name=topping id=chicken value=chicken>
+                    <label for=chicken>Chicken</label>
+                    <input type="checkbox" name=topping id=bacon value=bacon>
+                    <label for=bacon>Bacon</label> 
+                    <input type="checkbox" name=topping id=veggie value=veggie>
+                    <label for=veggie>Veggie Assortment</label> 
+                    <hr>
+                </section>
+
+                <section class="add-ons">
+                    <label for=add> Please include any additional add-ons or comments for your order.</label>
+                    <br>
+                    <textarea id=add name=add rows=3 cols=40>Your wish is our command</textarea>
+                    <hr>
+                </section>
+
+                <section class="submission">
+                    <input type="submit" value="Submit">
+                </section>
+            </form>
+        </section>
+    </body>
+</html>

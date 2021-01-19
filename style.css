@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(228, 188, 129);
+    font-family: Rubik, Arial;
+}
+
+form{
+    text-align: center;
+    line-height: 30px;
+    height: 80%;
+    overflow: auto;
+}
+
+form hr{
+    width: 15%;
+}
+
+h1{
+    text-align: center;
+}
+
+#pizza{
+    max-height: 30%
+}
+
+#overlay{
+    width: 80%;
+    margin: 3% auto;
+    height: 95vh;
+    background-color: rgba(255, 217, 159, 0.9);
+    border-radius: 40px;
+}
+
+#logo{
+    height: 100px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.size label, .toppings label{
+    margin-right: 25px;
+}
